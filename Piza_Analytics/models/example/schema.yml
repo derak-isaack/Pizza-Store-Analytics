@@ -2,7 +2,7 @@
 version: 2
 
 models:
-  - name: my_first_dbt_model
+  - name: common_sizs
     description: "A starter dbt model"
     columns:
       - name: id
@@ -11,7 +11,34 @@ models:
           - unique
           - not_null
 
-  - name: my_second_dbt_model
+  - name: expensive_pizza
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: num_orders
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: orders_join
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: total_revenue
     description: "A starter dbt model"
     columns:
       - name: id
